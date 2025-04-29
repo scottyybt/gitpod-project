@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "brew": "^0.0.8",
+    "dependencies": "^0.0.1",
+    "gh": "^2.8.9",
+    "gitpod": "^1.1.4",
+    "go": "^2.0.2",
+    "goose": "^0.0.3",
+    "homebrew": "^0.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mosh": "^1.1.5",
+    "pip": "^0.0.1",
+    "python": "^0.0.4",
+    "tmux": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/node": "^22.14.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@pnpm/exe"
+    ]
+  }
+}

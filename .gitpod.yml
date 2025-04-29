@@ -1,0 +1,32 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  - port: 3000
+    onOpen: open-preview
+  - port: 8080
+    onOpen: ignore
+  - port: 9229
+    onOpen: ignore
+
+tasks:
+  - name: Install Dependencies
+    init: |
+      npm install
+    command: |
+      echo "Node.js environment ready!"
+      node --version
+      npm --version
+
+  - name: Start Development Server
+    command: |
+      echo "Ready to start your development server"
+      # Uncomment the line below once you're ready to start your app
+      # npm run dev
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+    - esbenp.prettier-vscode
+    - ms-vscode.vscode-typescript-next
+
